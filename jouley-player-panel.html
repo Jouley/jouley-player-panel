@@ -1,0 +1,30 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../jouley-controls/jouley-controls.html">
+<link rel="import" href="../jouley-progress/jouley-progress.html">
+
+<dom-module id="jouley-player-panel">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <template is="dom-if" if="[[!controls]]">
+      <content select="jouley-controls"></content>
+      <content select="jouley-progress"></content>
+    </template>
+    <template is="dom-if" if="[[controls]]">
+      <content select="jouley-progress"></content>
+      <content select="jouley-controls"></content>
+    </template>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'jouley-player-panel'
+
+    });
+  </script>
+</dom-module>
