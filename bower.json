@@ -1,5 +1,6 @@
 {
   "name": "jouley-player-panel",
+  "version": "0.1.0",
   "main": "jouley-player-panel.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0"
