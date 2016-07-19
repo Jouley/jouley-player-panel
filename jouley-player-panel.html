@@ -1,6 +1,4 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../jouley-controls/jouley-controls.html">
-<link rel="import" href="../jouley-progress/jouley-progress.html">
 
 <dom-module id="jouley-player-panel">
   <template>
@@ -21,12 +19,6 @@
         flex-direction: column;
         width: 100%;
       }
-
-      /*.upper-container {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-      }*/
 
       .bottom-container {
         display: flex;
@@ -115,9 +107,6 @@
 
     <!-- basic template -->
     <template is="dom-if" if="[[_computeBasicPlayer(lite, libraryPlayer)]]">
-      <!-- <span class="cover-container"> -->
-        <!-- <template is="dom-if" if="[[libraryPlayer]]" restamp="true"></template> -->
-      <!-- </span> -->
       <span class="container">
         <content select="jouley-progress-bar"></content>
         <div class="horizontal horizontal-panel">
@@ -142,18 +131,7 @@
           </div>
         </div>
       </span>
-    </template>
-
-    <!-- library-player template -->
-    <!-- <template is="dom-if" if="[[libraryPlayer]]">
-      <content select="jouley-cover"></content>
-      <div class="">
-        <div class="column-container">
-          <content select="jouley-progress"></content>
-          <content select="jouley-controls"></content>
-        </div>
-      </div>
-    </template> -->
+    </template>    
   </template>
 
   <script>

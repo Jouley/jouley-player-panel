@@ -2,9 +2,7 @@
   "name": "jouley-player-panel",
   "main": "jouley-player-panel.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0",
-    "jouley-progress": "*",
-    "jouley-controls": "*"
+    "polymer": "Polymer/polymer#^1.4.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
